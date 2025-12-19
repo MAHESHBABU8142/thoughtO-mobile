@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "thoughto-mobile",
-    "slug": "thoughto-mobile",
-    "version": "1.0.0",
+    "name": "ThoughtO",
+    "slug": "thoughto",
+    "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/splash-icon.png",
     "scheme": "thoughtomobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,27 +13,26 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "foregroundImage": "./assets/images/splash-icon.png",
+        "backgroundColor": "#000003"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.mahesh.thoughto",
+      "versionCode": 1
     },
     "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static"
     },
     "plugins": [
-      "expo-router",
       [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#000003",
           "dark": {
             "backgroundColor": "#000000"
           }
@@ -43,6 +42,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87278537-38ca-4f4c-91c6-23483432cd0f"
+      }
+    },
+    "owner": "maheshbabu003"
   }
 }
